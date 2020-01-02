@@ -9,13 +9,12 @@ class List {
   }
 }
 
-class MyList extends List {
-
-}
+class MyList extends List {}
 
 class TodoList extends List {
-  constructor() {
+  constructor(name) {
     super();
+    this._name = name;
     this.todos = [];
   }
 
@@ -23,10 +22,20 @@ class TodoList extends List {
     this.todos.push('Novo todo');
     console.log(this.todos);
   }
+
+  get name() {
+    return this._name;
+  }
+
+  set name(name) {
+    this._name = name;
+  }
 }
 
-const todoList = new MyList();
+const todoList = new TodoList('Minha lista');
 
 document.getElementById('newTodo').onclick = function () {
   todoList.add('Novo todo');
 };
+
+console.log(todoList.name);
