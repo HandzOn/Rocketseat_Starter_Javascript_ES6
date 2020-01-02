@@ -1,21 +1,17 @@
 "use strict";
 
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+// REST
 var user = {
   name: 'Guilherme',
   age: 27,
-  address: {
-    city: 'São Paulo',
-    state: 'SP'
-  }
+  company: 'Crescer Informática'
 };
+
 var name = user.name,
-    age = user.age,
-    city = user.address.city;
+    rest = _objectWithoutProperties(user, ["name"]);
 
-function getState(_ref) {
-  var state = _ref.address.state;
-  return state;
-}
-
-console.log(name, age, city);
-console.log(getState(user));
+console.log(name, rest);

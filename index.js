@@ -1,18 +1,11 @@
+// REST
+
 const user = {
   name: 'Guilherme',
   age: 27,
-  address: {
-    city: 'São Paulo',
-    state: 'SP'
-  }
+  company: 'Crescer Informática'
 };
-const { name, age, address: { city } } = user;
 
+const { name, ...rest } = user;
 
-function getState({ address: { state } }) {
-  return state;
-}
-
-
-console.log(name, age, city);
-console.log(getState(user));
+console.log(name, rest);
