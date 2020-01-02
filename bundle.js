@@ -9,5 +9,6 @@ var user = {
   }
 };
 var name = user.name,
-    age = user.age;
-console.log(name, age);
+    age = user.age,
+    city = user.address.city;
+console.log(name, age, city);

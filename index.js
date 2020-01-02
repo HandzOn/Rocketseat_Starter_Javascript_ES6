@@ -6,5 +6,5 @@ const user = {
     state: 'SP'
   }
 };
-const { name, age } = user;
-console.log(name, age);
+const { name, age, address: { city } } = user;
+console.log(name, age, city);
