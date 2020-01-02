@@ -13,3 +13,7 @@ var pairs = arr.filter(function (item) {
   return item % 2 === 0;
 });
 console.log(pairs);
+var find = arr.find(function (item) {
+  return item === 4;
+});
+console.log(find);

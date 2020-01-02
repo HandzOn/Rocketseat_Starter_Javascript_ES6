@@ -8,3 +8,6 @@ console.log(sum);
 
 const pairs = arr.filter(item => item % 2 === 0);
 console.log(pairs);
+
+const find = arr.find(item => item === 4);
+console.log(find);
