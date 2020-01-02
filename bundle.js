@@ -90,11 +90,11 @@
 /*!**********************!*\
   !*** ./functions.js ***!
   \**********************/
-/*! exports provided: sum */
+/*! exports provided: sum, sub, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sum\", function() { return sum; });\nfunction sum(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./functions.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sum\", function() { return sum; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sub\", function() { return sub; });\nfunction sum(a, b) {\n  return a + b;\n}\nvar sub = function sub(a, b) {\n  return a - b;\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\n  console.log('Export default');\n});\n\n//# sourceURL=webpack:///./functions.js?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./functions.js\");\n\nconsole.log(Object(_functions__WEBPACK_IMPORTED_MODULE_0__[\"sum\"])(1, 2));\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./functions.js\");\n\nconsole.log(Object(_functions__WEBPACK_IMPORTED_MODULE_0__[\"sum\"])(1, 2));\nconsole.log(Object(_functions__WEBPACK_IMPORTED_MODULE_0__[\"sub\"])(2, 1));\nObject(_functions__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 
