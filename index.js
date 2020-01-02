@@ -3,3 +3,5 @@ class Math {
     return a + b;
   }
 }
+
+console.log(Math.sum(1, 2));

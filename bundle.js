@@ -22,3 +22,5 @@ function () {
 
   return Math;
 }();
+
+console.log(Math.sum(1, 2));
