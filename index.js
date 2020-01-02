@@ -11,3 +11,6 @@ console.log(pairs);
 
 const find = arr.find(item => item === 4);
 console.log(find);
+
+const test = () => ({ nome: 'Guilherme' });
+console.log(test());
