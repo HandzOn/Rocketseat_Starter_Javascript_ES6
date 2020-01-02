@@ -2,4 +2,8 @@ class People {
   sayHello() {
 
   }
+
+  other() {
+
+  }
 }
