@@ -9,8 +9,6 @@ class List {
   }
 }
 
-class MyList extends List {}
-
 class TodoList extends List {
   constructor(name) {
     super();
