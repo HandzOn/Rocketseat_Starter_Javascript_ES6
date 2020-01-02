@@ -15,3 +15,20 @@ var name = user.name,
     rest = _objectWithoutProperties(user, ["name"]);
 
 console.log(name, rest);
+var arr = [1, 2, 3, 4];
+var a = arr[0],
+    b = arr[1],
+    c = arr.slice(2);
+console.log(a, b, c);
+
+function sum() {
+  for (var _len = arguments.length, c = new Array(_len), _key = 0; _key < _len; _key++) {
+    c[_key] = arguments[_key];
+  }
+
+  return c.reduce(function (total, next) {
+    return total + next;
+  });
+}
+
+console.log(sum(1, 3, 4));
