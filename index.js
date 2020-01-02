@@ -5,3 +5,6 @@ console.log(newArr);
 
 const sum = arr.reduce((total, next) => total + next);
 console.log(sum);
+
+const pairs = arr.filter(item => item % 2 === 0);
+console.log(pairs);
